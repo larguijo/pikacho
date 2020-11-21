@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Landing from "./Landing";
 import Navigation from "components/Header/Navigation";
-import { Container, Row, Column } from "components/Grid";
-import Card from "components/Card";
+import { Container } from "components/Grid";
+import AboutUs from "components/Sections/AboutUs";
+import Cabin from "components/Sections/Cabin";
 
 const Title = styled.div`
   position: absolute;
@@ -24,34 +25,16 @@ export default function LandingPage() {
         </h1>
       </Title>
       <Landing />
-      <Container>
-        <Row>
-          <Column xs="100%">
-            <Row>
-              <Column xs="100%">
-                <h2>conócenos</h2>
-              </Column>
-            </Row>
-            <Row>
-              <Column xs="100%" md="50%"></Column>
-              <Column xs="100%" md="50%">
-                <Card>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                </Card>
-              </Column>
-            </Row>
-          </Column>
-        </Row>
-      </Container>
+      <section id="aboutUs">
+        <Container>
+          <AboutUs />
+        </Container>
+      </section>
+      <section id="cabin" style={{ backgroundColor: "#f3f3f3" }}>
+        <Container>
+          <Cabin />
+        </Container>
+      </section>
     </>
   );
 }

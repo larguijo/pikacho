@@ -20,7 +20,7 @@ const NavBar = styled.nav`
 
   li a:hover {
     font-size: 110%;
-    color: #29b6f6;
+    color: #8bc34a;
   }
 `;
 
