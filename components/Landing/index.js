@@ -4,10 +4,10 @@ import Navigation from "components/Header/Navigation";
 import { Container } from "components/Grid";
 import AboutUs from "components/Sections/AboutUs";
 import Cabin from "components/Sections/Cabin";
+import Galery from "components/Sections/Galery";
 
 const Title = styled.div`
   position: absolute;
-  width: 1140px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -26,14 +26,13 @@ export default function LandingPage() {
       </Title>
       <Landing />
       <section id="aboutUs">
-        <Container>
-          <AboutUs />
-        </Container>
+        <AboutUs />
       </section>
       <section id="cabin" style={{ backgroundColor: "#f3f3f3" }}>
-        <Container>
-          <Cabin />
-        </Container>
+        <Cabin />
+      </section>
+      <section id="galery">
+        <Galery />
       </section>
     </>
   );
