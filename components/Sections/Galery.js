@@ -27,7 +27,7 @@ const IMAGES = [
 
 const ImageDescription = styled.div`
   width: auto;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   font-size: 75%;
   position: absolute;
@@ -39,8 +39,8 @@ const ImageDescription = styled.div`
 
 function Galery() {
   const renderImages = () => {
-    return IMAGES.map(({ src, text }) => (
-      <Column xs="100%" md="25%">
+    return IMAGES.map(({ src, text }, idx) => (
+      <Column key={`galery.${idx}`} xs="100%" md="25%">
         <ImgContainer>
           <img src={`img/galery/${src}`} />
           <ImageDescription>{text}</ImageDescription>
