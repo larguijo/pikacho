@@ -10,7 +10,7 @@ const ImgContainer = styled.div`
     height: auto;
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
   }
 `;
 
