@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Landing from "./Landing";
 import Navigation from "components/Header/Navigation";
-import { Container } from "components/Grid";
 import AboutUs from "components/Sections/AboutUs";
 import Cabin from "components/Sections/Cabin";
 import Galery from "components/Sections/Galery";
+import GettingThere from "components/Sections/GettingThere";
 
 const Title = styled.div`
   position: absolute;
@@ -33,6 +33,9 @@ export default function LandingPage() {
       </section>
       <section id="galery">
         <Galery />
+      </section>
+      <section id="getThere" style={{ backgroundColor: "#f3f3f3" }}>
+        <GettingThere />
       </section>
     </>
   );

@@ -56,6 +56,11 @@ h2:after {
   margin-top: 15px;
 }
 
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 blockquote {
   font-style: italic;
   position: relative;
