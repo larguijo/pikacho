@@ -1,6 +1,6 @@
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
 import config from "../../config";
-
+console.log("config.GOOGLE_API_KEY", config.GOOGLE_API_KEY);
 function MapContainer({ google, onInfoWindowClose }) {
   const location = {
     address: "Pikacho Guest House",
