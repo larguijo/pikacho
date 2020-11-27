@@ -5,6 +5,7 @@ import AboutUs from "components/Sections/AboutUs";
 import Cabin from "components/Sections/Cabin";
 import Galery from "components/Sections/Galery";
 import GettingThere from "components/Sections/GettingThere";
+import Tours from "components/Sections/Tours";
 
 const Title = styled.div`
   position: absolute;
@@ -36,6 +37,9 @@ export default function LandingPage() {
       </section>
       <section id="getThere" style={{ backgroundColor: "#f3f3f3" }}>
         <GettingThere />
+      </section>
+      <section id="tours">
+        <Tours />
       </section>
     </>
   );

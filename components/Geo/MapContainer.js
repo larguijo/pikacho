@@ -57,12 +57,14 @@ function MapContainer({ google }) {
         onClose={onInfoWindowClose}
         visible={showInfoWindow}
       >
-        <h3>{selectedPlace.name}</h3>
-        <a
-          href={`https://www.google.com/maps/@${location.lat},${location.lng},15z`}
-        >
-          See in Google Maps
-        </a>
+        <>
+          <h3>{selectedPlace.name}</h3>
+          <a
+            href={`https://www.google.com/maps/@${location.lat},${location.lng},15z`}
+          >
+            See in Google Maps
+          </a>
+        </>
       </InfoWindow>
     </Map>
   );
