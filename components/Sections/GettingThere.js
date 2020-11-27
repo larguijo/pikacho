@@ -1,5 +1,6 @@
 import { Container, Row, Column } from "components/Grid";
 import MapContainer from "components/Geo/MapContainer";
+import ReactPlayer from "react-player/lazy";
 
 function GettingThere() {
   return (
@@ -31,6 +32,14 @@ function GettingThere() {
               por ti.
             </strong>
           </p>
+        </Column>
+        <Column xs="100%">
+          <ReactPlayer
+            style={{ margin: "auto", minHeight: "400px" }}
+            width="100%"
+            url="https://www.youtube.com/watch?v=Z_8qVUJEspw"
+            controls
+          />
         </Column>
       </Row>
     </Container>

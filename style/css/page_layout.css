@@ -46,6 +46,10 @@ h2 {
   letter-spacing: 1px;
 }
 
+h3 {
+  color: #00796b;
+}
+
 h2:after {
   content: "";
   display: block;
