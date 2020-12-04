@@ -5,6 +5,7 @@ import AboutUs from "components/Sections/AboutUs";
 import Cabin from "components/Sections/Cabin";
 import Galery from "components/Sections/Galery";
 import GettingThere from "components/Sections/GettingThere";
+import Pet from "components/Sections/Pet";
 import Tours from "components/Sections/Tours";
 
 const Title = styled.div`
@@ -40,6 +41,9 @@ export default function LandingPage() {
       </section>
       <section id="tours">
         <Tours />
+      </section>
+      <section id="pets" style={{ backgroundColor: "#f3f3f3" }}>
+        <Pet />
       </section>
     </>
   );

@@ -5,6 +5,7 @@ const ImgContainer = styled.div`
   position: relative;
 
   img {
+    ${({ bordered = false }) => (bordered ? "background-color: #4e342e;" : "")}
     max-width: 100%;
     width: auto;
     height: auto;

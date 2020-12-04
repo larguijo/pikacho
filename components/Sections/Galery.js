@@ -41,7 +41,7 @@ function Galery() {
   const renderImages = () => {
     return IMAGES.map(({ src, text }, idx) => (
       <Column key={`galery.${idx}`} xs="100%" md="25%">
-        <ImgContainer>
+        <ImgContainer bordered>
           <img src={`img/galery/${src}`} />
           <ImageDescription>{text}</ImageDescription>
         </ImgContainer>

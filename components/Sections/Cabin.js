@@ -15,7 +15,7 @@ function Cabin() {
           </Row>
           <Row>
             <Column xs="100%" md="50%">
-              <ImgContainer>
+              <ImgContainer bordered>
                 <img src="/img/main-bedroom.jpg" alt="Main Bedroom" />
               </ImgContainer>
             </Column>
@@ -49,7 +49,7 @@ function Cabin() {
               </Card>
             </Column>
             <Column xs="100%" md="50%">
-              <ImgContainer>
+              <ImgContainer bordered>
                 <img src="/img/second-bedroom.jpg" alt="Main Bedroom" />
               </ImgContainer>
             </Column>
