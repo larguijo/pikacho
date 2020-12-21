@@ -3,15 +3,15 @@ import Card from "components/Card";
 import ImgContainer from "components/Images/ImgContainer";
 import Carousel from "../Card/Carousel";
 const MAIN_BEDROOM = [
-  { src: "/img/bedrooms/11.jpg", alt: "Main Bedroom" },
-  { src: "/img/bedrooms/12.jpg", alt: "Main Bedroom 2" },
-  { src: "/img/bedrooms/13.jpg", alt: "Main Bedroom 3" },
-  { src: "/img/bedrooms/14.jpg", alt: "Main Bedroom 4" },
+  { src: "/img/bedrooms/main_1.jpg", alt: "Main Bedroom" },
+  { src: "/img/bedrooms/main_2.jpg", alt: "Main Bedroom 2" },
+  { src: "/img/bedrooms/main_3.jpg", alt: "Main Bedroom 3" },
+  { src: "/img/bedrooms/main_4.jpg", alt: "Main Bedroom 4" },
 ];
 
 const SECOND_BEDROOM = [
-  { src: "/img/bedrooms/21.jpg", alt: "Second Bedroom" },
-  { src: "/img/bedrooms/22.jpg", alt: "Second Bedroom 2" },
+  { src: "/img/bedrooms/second_1.jpg", alt: "Second Bedroom" },
+  { src: "/img/bedrooms/second_2.jpg", alt: "Second Bedroom 2" },
 ];
 
 function Cabin() {
