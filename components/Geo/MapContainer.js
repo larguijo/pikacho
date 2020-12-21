@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
 import config from "../../config";
-console.log("config.GOOGLE_API_KEY", config.GOOGLE_API_KEY);
 
 function MapContainer({ google }) {
   const [activeMarker, setActiveMarker] = useState({});
@@ -27,8 +26,6 @@ function MapContainer({ google }) {
   };
 
   const onMarkerClick = (props, marker) => {
-    console.log("props", props);
-    console.log("marker", marker);
     setActiveMarker(marker);
     setSelectedPlace(props);
     setShowInfoWindow(true);

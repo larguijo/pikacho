@@ -20,10 +20,7 @@ function Cabin() {
           </Row>
           <Row>
             <Column xs="100%" md="50%">
-              <Carousel images={MAIN_BEDROOM}></Carousel>
-              {/* <ImgContainer bordered>
-                <img src="/img/main-bedroom.jpg" alt="Main Bedroom" />
-              </ImgContainer> */}
+              <Carousel images={MAIN_BEDROOM} name="main"></Carousel>
             </Column>
             <Column xs="100%" md="50%">
               <Card>
