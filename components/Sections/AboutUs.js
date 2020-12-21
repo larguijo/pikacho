@@ -1,6 +1,6 @@
 import { Container, Row, Column } from "components/Grid";
 import Card from "components/Card";
-import Carousel from "components/Card/Carousel";
+import ImgContainer from "components/Images/ImgContainer";
 
 function AboutUs() {
   return (
@@ -14,7 +14,9 @@ function AboutUs() {
           </Row>
           <Row>
             <Column xs="100%" lg="40%">
-              <Carousel />
+              <ImgContainer>
+                <img src="/img/Carousel3.jpg" alt="Cabin" />
+              </ImgContainer>
             </Column>
             <Column xs="100%" lg="60%">
               <Card>

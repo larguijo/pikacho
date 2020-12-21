@@ -1,7 +1,12 @@
-import styled from "styled-components";
 import { Container, Row, Column } from "components/Grid";
 import Card from "components/Card";
 import ImgContainer from "components/Images/ImgContainer";
+import Carousel from "../Card/Carousel";
+const MAIN_BEDROOM = [
+  { src: "/img/bedrooms/01.jpg", alt: "Main Bedroom" },
+  { src: "/img/bedrooms/02.jpg", alt: "Main Bedroom 2" },
+  { src: "/img/bedrooms/03.jpg", alt: "Main Bedroom 3" },
+];
 
 function Cabin() {
   return (
@@ -15,9 +20,10 @@ function Cabin() {
           </Row>
           <Row>
             <Column xs="100%" md="50%">
-              <ImgContainer bordered>
+              <Carousel images={MAIN_BEDROOM}></Carousel>
+              {/* <ImgContainer bordered>
                 <img src="/img/main-bedroom.jpg" alt="Main Bedroom" />
-              </ImgContainer>
+              </ImgContainer> */}
             </Column>
             <Column xs="100%" md="50%">
               <Card>
