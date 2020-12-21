@@ -3,9 +3,15 @@ import Card from "components/Card";
 import ImgContainer from "components/Images/ImgContainer";
 import Carousel from "../Card/Carousel";
 const MAIN_BEDROOM = [
-  { src: "/img/bedrooms/01.jpg", alt: "Main Bedroom" },
-  { src: "/img/bedrooms/02.jpg", alt: "Main Bedroom 2" },
-  { src: "/img/bedrooms/03.jpg", alt: "Main Bedroom 3" },
+  { src: "/img/bedrooms/11.jpg", alt: "Main Bedroom" },
+  { src: "/img/bedrooms/12.jpg", alt: "Main Bedroom 2" },
+  { src: "/img/bedrooms/13.jpg", alt: "Main Bedroom 3" },
+  { src: "/img/bedrooms/14.jpg", alt: "Main Bedroom 4" },
+];
+
+const SECOND_BEDROOM = [
+  { src: "/img/bedrooms/21.jpg", alt: "Second Bedroom" },
+  { src: "/img/bedrooms/22.jpg", alt: "Second Bedroom 2" },
 ];
 
 function Cabin() {
@@ -52,9 +58,7 @@ function Cabin() {
               </Card>
             </Column>
             <Column xs="100%" md="50%">
-              <ImgContainer bordered>
-                <img src="/img/second-bedroom.jpg" alt="Main Bedroom" />
-              </ImgContainer>
+              <Carousel images={SECOND_BEDROOM} name="secondary"></Carousel>
             </Column>
           </Row>
         </Column>
